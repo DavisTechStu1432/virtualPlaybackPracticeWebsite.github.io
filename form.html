@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Virtual Playback</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="virtualPlayback.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Virtual Playback!</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>&nbsp;
+        <a href="products.html">Physical Mediums</a>&nbsp;
+        <a href="form.html">PURCHASE NOW!</a>&nbsp;
+        <a href="faq.html">FAQ</a>
+    </nav>
+    <main>
+        <h2>Virtual Playback Physical Storage</h2>
+        <p>
+            Getting your physical media for your favorite files 
+            is now just a couple clicks away! Please input all 
+            relevant info to have your memories mailed to you!
+        </p>
+        <div id="formbox">
+            <form method="post" action="https://webdevbasics.net/scripts/demo.php">
+                <p class="formtext">Order Info</p>
+                <label for="Product">*Media Type</label>
+                <select size="1" name="Product" id="Product" required="required">
+                    <option value="">Select your Choice!</option>
+                    <option value="CD/DVD">CD/DVD</option>
+                    <option value="Blu-Ray">Blu-Ray</option>
+                    <option value="Other">Other option (Input in notes below)</option>
+                </select>
+                <label for="fileSize">*File Size (In MB)</label>
+                <input type="number" name="fileSize" id="fileSize" min="2" required="required">
+                <Label for="Notes">Notes</Label>
+                <textarea name="Notes" id="Notes" rows="5" cols="30"></textarea>
+                <p class="formtext">Contact Info</p>
+                <label for="myFName">*First Name:</label>
+                <input type="text" name="myFName" id="myFName" required="required">
+                <label for="myLName">*Last Name:</label>
+                <input type="text" name="myLName" id="myLName" required="required">
+                <label for="myEmail">*E-mail:</label>
+                <input type="email" name="myEmail" id="myEmail" required="required">
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" maxlength="12">
+                <input type="submit">  
+            </form>
+        </div>
+    </main>
+    <footer>
+        <small><i>
+            Copyright &copy; 2025 "Virtual Playback" Retro Electronics LLC<br>
+            <a href="mailto:4800626844@davistech.edu">
+                4800626844@davistech.edu
+            </a>       
+        </i></small>
+    </footer>
+</body>
+</html>

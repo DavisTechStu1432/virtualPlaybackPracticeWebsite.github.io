@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom, #12084e, red);
+    background-repeat: no-repeat;
+    color: orange; 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+nav{
+    background-color: bisque;
+}
+nav a{
+    color: #7d0f99;
+    text-decoration: none;
+}
+nav a:link{
+    color: rgb(65, 67, 204);
+}
+nav a:visited{
+    color: gray;
+}
+nav a:hover{
+    color: purple;
+}
+main{
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 30px;
+    display: block;
+    overflow: auto;
+}
+#mediaList{
+    background-color: rgb(0, 7, 46);
+    width: 40%;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: lower-alpha;
+}
+table{
+    color: green;
+    background-color: white;
+    border-style: double;
+    border-width: 5px;
+    border-color: darkgrey;
+    text-align: center;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+td{
+    color: cadetblue;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    text-align: center;
+}
+th{
+    padding: 1em;
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+}
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 140px;
+    padding-right: 5px;
+}
+input{
+    display: block;
+    margin-bottom: 20px;
+}
+textarea{
+    display: block;
+    margin-bottom: 20px;
+}
+select{
+    display: block;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+input[type="submit"]{
+    margin-left: 140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#imageset{
+    background-color: #7d0f99;
+    padding: 25px;
+    margin: 27px;
+    display: flex;
+    float: left;
+    flex-direction: column;
+}
+#formbox{
+    color: black;
+    background-color: silver;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
+    background-repeat: no-repeat;
+    display:block;
+    float: none;
+    width: 25%;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagestuff{
+    margin: 20px;
+}
+.formtext{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    padding-left: 15px;
+}
+
+/* drop down stuff */
+.dropdown{
+    background-color: #440a91;
+}
+.dropdown .trigger {
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.dropdown .trigger::after {
+    content: ">";
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    transform: rotate(90deg) scale(0.5, 1);  /* rotates the > */
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.dropdown .trigger.active::after {
+    transform: rotate(-90deg) scale(0.5, 1);
+}
+.dropdown .content {
+    display: none;
+}
+.dropdown .content.active {
+    display: block;
+}
